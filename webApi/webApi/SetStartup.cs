@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System;
+using System.IO;
 
 namespace webApi
 {
@@ -19,8 +20,13 @@ namespace webApi
                     Description = $"{ApiName} Http api v1",
                 });
                 c.OrderActionsBy(o => o.RelativePath);
+                //获取xml注释文件的目录
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, "webApi.xml");
+                c.IncludeXmlComments(xmlPath,true);//默认的第二个参数是false，这个是controller的注释，记得修改
+                var xmlModelPath = Path.Combine(AppContext.BaseDirectory, "webApiModel.xml");//这个就是Model层的xml文件名
+                c.IncludeXmlComments(xmlModelPath);
             });
-
+            
         }
     }
 }

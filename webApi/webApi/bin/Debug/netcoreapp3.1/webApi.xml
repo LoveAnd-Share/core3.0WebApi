@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webApi</name>
+    </assembly>
+    <members>
+        <member name="T:webApi.Controllers.UserController">
+            <summary>
+            用户登录请求
+            </summary>
+        </member>
+        <member name="M:webApi.Controllers.UserController.Ret">
+            <summary>
+            测试请求接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webApi.Controllers.UserController.User(webApiModel.UserModel)">
+            <summary>
+            输出用户测试
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

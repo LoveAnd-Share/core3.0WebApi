@@ -1,0 +1,11 @@
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\bin\Debug\netcoreapp3.1\webApiModel.deps.json
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\bin\Debug\netcoreapp3.1\webApiModel.dll
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\bin\Debug\netcoreapp3.1\webApiModel.pdb
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\bin\Debug\netcoreapp3.1\webApiModel.xml
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\obj\Debug\netcoreapp3.1\webApiModel.csproj.AssemblyReference.cache
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\obj\Debug\netcoreapp3.1\webApiModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\obj\Debug\netcoreapp3.1\webApiModel.AssemblyInfoInputs.cache
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\obj\Debug\netcoreapp3.1\webApiModel.AssemblyInfo.cs
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\obj\Debug\netcoreapp3.1\webApiModel.csproj.CoreCompileInputs.cache
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\obj\Debug\netcoreapp3.1\webApiModel.dll
+C:\Users\Magic\Desktop\core3.0WebApi\webApiModel\obj\Debug\netcoreapp3.1\webApiModel.pdb

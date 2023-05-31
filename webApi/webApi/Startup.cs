@@ -10,6 +10,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
+using Microsoft.VisualBasic;
+using webApiCommon.Helper;
 
 namespace webApi
 {
@@ -25,6 +27,11 @@ namespace webApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //×¢²á¶ÁÈ¡appsettings¶ÁÈ¡Àà
+            services.AddSingleton(new AppSettings(Configuration));
+
+            var text = AppSettings.app(new string[] { "AppSettings","ConnectionString"});
+            
             //×¢²áswagger
             services.AddSwaggerSetUp();
             services.AddControllers();

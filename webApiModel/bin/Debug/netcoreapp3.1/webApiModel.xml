@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webApiModel</name>
+    </assembly>
+    <members>
+        <member name="P:webApiModel.TokenModel.Uid">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:webApiModel.TokenModel.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:webApiModel.UserModel.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:webApiModel.UserModel.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:webApiModel.UserModel.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+    </members>
+</doc>
