@@ -5,10 +5,9 @@ using webApiModel;
 
 namespace webApi.Controllers
 {
-    /// <summary>
-    /// 用户登录请求
-    /// </summary>
-    public class UserController : BaseController
+    [Route("api/[controller]/[action]")]
+    [ApiController]
+    public class UserController : ControllerBase
     {
         /// <summary>
         /// 测试请求接口
@@ -29,6 +28,11 @@ namespace webApi.Controllers
         {
             return Ok(user);
         }
+        /// <summary>
+        /// 角色权限测试
+        /// </summary>
+        /// <param name="role"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Login(string role) 
         {

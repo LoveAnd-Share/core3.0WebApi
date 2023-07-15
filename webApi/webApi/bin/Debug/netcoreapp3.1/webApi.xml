@@ -4,11 +4,6 @@
         <name>webApi</name>
     </assembly>
     <members>
-        <member name="T:webApi.Controllers.UserController">
-            <summary>
-            用户登录请求
-            </summary>
-        </member>
         <member name="M:webApi.Controllers.UserController.Ret">
             <summary>
             测试请求接口
@@ -21,6 +16,27 @@
             </summary>
             <param name="user"></param>
             <returns></returns>
+        </member>
+        <member name="M:webApi.Controllers.UserController.Login(System.String)">
+            <summary>
+            角色权限测试
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webApi.SetSatrtup.SetStartup.AddSwaggerSetUp(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            swagger设置
+            </summary>
+            <param name="services"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:webApi.SetSatrtup.SetStartup.AddAuthorizationSetup(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            设置授权
+            </summary>
+            <param name="services"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
         </member>
     </members>
 </doc>

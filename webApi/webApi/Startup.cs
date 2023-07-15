@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
 using Microsoft.VisualBasic;
 using webApiCommon.Helper;
+using webApi.SetSatrtup;
 
 namespace webApi
 {
@@ -31,7 +32,8 @@ namespace webApi
             services.AddSingleton(new AppSettings(Configuration));
 
             var text = AppSettings.app(new string[] { "AppSettings","ConnectionString"});
-            
+            //jwt授权验证
+            services.AddAuthorizationSetup();
             //注册swagger
             services.AddSwaggerSetUp();
             services.AddControllers();
@@ -49,17 +51,20 @@ namespace webApi
                 c.SwaggerEndpoint($"/swagger/v1/swagger.json", "Webapi.Core v1");
                 c.RoutePrefix = "";
             });
+            //注意中间件的顺序，UseRouting放在最前边，UseAuthentication在UseAuthorization前边
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapControllers();
-                endpoints.MapControllerRoute(
-                    name:default,
-                    pattern:"{controller=Home}/{action=Index}/{id?}"
-                    );
+                endpoints.MapControllers();
+                //endpoints.MapControllerRoute(
+                //    name: default,
+                //    pattern: "{controller=Home}/{action=Index}/{id?}"
+                //    );
             });
         }
     }
